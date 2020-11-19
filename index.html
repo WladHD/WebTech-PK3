@@ -16,16 +16,27 @@
                 <li><a href="./index.html">Raumliste</a></li>
                 <li><a href="./details.html">Raumdetails</a></li>
                 <li><a href="./booking.html">Buchungsdetails</a></li>
+                <li><a href="./reserve.html">Raumbuchung</a></li>
             </ul>
         </nav>
 
         <main>
             <h1>Verfügbare Räume</h1>
 
+            <form action="https://labs.inf.fh-dortmund.de/roomReservationService/testRoomSearch.php" method="get">
+                <fieldset>
+                    <legend>Nach Raum suchen</legend>
+                    <label>Raumnummer <input type="text" name="roomno" pattern="[A-Z]\.[E1-3]\.[0-9]{2}"></label> <!--[a-z] -->
+                </fieldset>
+
+                <fieldset>
+                    <input type="submit" value="Suchen">
+                </fieldset>
+            </form>
+
             <ul>
                 <li><a href="./details.html">A.E.01</a> - Hörsaal - EF 42</li>
                 <li><a href="./details.html">B.E.21</a> - Besprechungsraum - EF 42</li>
-                <li><a href="./details.html">246</a> - Besprechungsraum - EF 44</li>
             </ul>
         </main>
 
